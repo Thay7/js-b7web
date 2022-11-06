@@ -1,4 +1,4 @@
-//função com retorno condicional
+//Função com retorno condicional
 function maiorDeIdade(idade) {
     if (idade >= 18) {
         return true;
@@ -19,7 +19,7 @@ if (verificacao) {
 
 
 
-//arrow function
+//Arrow function
 const nomeDaFuncao = (parametro1, parametro2) => {
     return algo
 }
@@ -32,7 +32,7 @@ const sobrenome = sob => 'Thay ' + sob
 
 
 
-//variaveis dentro de funções
+//Variaveis dentro de funções
 let count = 0
 
 function add() {
@@ -44,3 +44,20 @@ add()
 add()
 
 console.log(count) //dentro das funções, variaveis com mesmo nome, as locais sobrepõem variaveis as globais, dessa forma aqui retorna 0, se comentamos a linha 39, aqui retorna 2
+
+
+
+
+//Funções dentro de funções (usar arrow function)
+function addSquares(a, b) {
+
+    const square = (x) => {
+        return x * x
+    }
+    
+    let sqrA = square(a)
+    let sqrB = square(b)
+    return sqrA + sqrB
+}
+
+console.log(addSquares(2, 3))
