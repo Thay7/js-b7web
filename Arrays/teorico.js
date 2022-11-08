@@ -60,3 +60,47 @@ cars.sort((a, b) => { //a é o atual e b é o seguinte, eles dois vão ser compa
     //simplificado: return a.year - b.year OU decrescente b.year - a.year
 })
 console.log(cars)
+
+//Iteração de arrays
+//Filter
+let filtroFilter = ingredientes.filter((value) => { //Função filter gera um novo array, então precisamos salvar em algum lugar
+    if(value.length > 4) {
+        return true
+    } else {
+        false
+    }
+
+    //simplificado: verificação direto no return value.lenght > 4
+})
+console.log(filtroFilter)
+
+//Every - retorna true ou false. só retorna true se TODOS satisfazerem a condição
+let filtroEvery = ingredientes.every((value) => {
+    return value.length > 3
+})
+
+if (filtroEvery) {
+    console.log('Todos são maior que 3')
+} else {
+    console.log('Não são todos maior que 3')
+}
+
+//Some - retorna true ou false. retorna true se PELO MENOS UM satisfizer a condição
+let filtroSome = ingredientes.some((value) => {
+    return value.length > 3
+})
+
+if (filtroSome) {
+    console.log('Algum item é meior que 3')
+} else {
+    console.log('Nenhum item é maior que 3')
+}
+
+//Includes
+let itemProcurado = 'sal'
+
+if (ingredientes.includes(itemProcurado)) { //pode colocar a palavra direto 'sal'
+    console.log(`Encontramos o ${itemProcurado}!`)
+} else {
+    console.log(`Não encontramos o ${itemProcurado} :(`)
+}
