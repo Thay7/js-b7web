@@ -1,0 +1,23 @@
+#elementos {
+    margin-top: 30vh;
+}
+
+#imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem {
+    width: 500px;
+    height: 350px;
+}
+
+#botoes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 10px;
+}
