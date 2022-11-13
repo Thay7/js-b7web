@@ -1,0 +1,60 @@
+#exemplo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.botao-verde {
+    background-color: #00FF00;
+}
+
+.botao-vermelho {
+    background-color: #FF0000;
+    color: #FFF;
+
+}
+
+.botao-azul {
+    background-color: #0000FF;
+    color: #FFF;
+
+}
+
+.verde {
+    background-color: #00FF00;
+}
+
+.vermelho {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+.azul{
+    background-color: #0000FF;
+    color: #FFF;
+}
+
+.botao {
+    margin-top: 10px;}
+
+.preto {
+    background-color: #000;
+    color: #FFF;
+
+}
+
+.amarelo {
+    background-color: #FFFF00;
+    color: #000;
+}
